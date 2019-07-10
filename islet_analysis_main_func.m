@@ -81,7 +81,7 @@ vessel_percent = (vessel_vol/tissuearea_vol)*100;
 table = array2table([tissuearea_vol vessel_vol vessel_percent avg_vess_dia]);
 table.Properties.VariableNames = {'Totaltissuevolpx' 'Totalvesselvolpx' 'PercentVolisVessel' 'Avg_vess_diameter_px'};
 
-cd(dir_analysis)
+cd(save_dir)
 table_name = strcat(shortfile,'_total vol_tissue_vess.csv');
 writetable(table,table_name);
  
