@@ -90,13 +90,13 @@ vessel_radius_img = vess_dia;
 cell_dist_vessel_img = new_all_nuc_dist_crop;
 cell_ins_int_img = new_all_nuc_int_crop;
 ind_cell_data = all_cell_stats;
-tissue_data = All_tissue_stats;
+tissue_data = table;
 
 %%%%%Write analyzed image files and tables to whole image data and
 %%%%%individual cell data
 cd(save_dir)
-all_islet_table_name = strcat(shortfile,'whole_Islet_stat.csv');  
-writetable(All_tissue_stats, all_islet_table_name);
+table_name = strcat(shortfile,'_total vol_tissue_vess.csv');
+writetable(table,table_name);
 
 all_cell_name = strcat(shortfile,'all_cells_stats.csv');
 writetable(array2table(all_cell_stats),all_cell_name);
