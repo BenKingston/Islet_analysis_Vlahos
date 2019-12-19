@@ -1,5 +1,5 @@
 # Islet_analysis_Vlahos
-Analysis of blood vessels and cells from 3D fluorescent microscopy images from "Tuneable pseudo-islet implants for diabetes therapy" Vlahos et al. (2019). 
+Analysis of blood vessels and cells from 3D fluorescent microscopy images from "Endothelialized collagen based pseudo-islets enables tuneable subcutaneous diabetes therapy" Vlahos et al. (2019). 
 
 The following image analysis functions are used to analyze the mean insulin intensity and cell distance to the nearest blood vessel from 3D flourescent lightsheet microscopy images. The workflow is broken down into the following steps:
 
